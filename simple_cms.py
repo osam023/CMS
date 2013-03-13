@@ -2,6 +2,7 @@ from bottle import route, run, template
 
 import os
 
+@route('/')
 @route('/cms')
 def load():
 	files = os.listdir('./data')
